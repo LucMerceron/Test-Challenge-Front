@@ -1,0 +1,117 @@
+body{
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+/* FEED LAYOUT */
+.feed-list{
+  height: 550px;
+  display: inline-block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 12px;
+  padding-bottom: 1px;
+}
+.feed-item{
+  display: block;
+  width: 400px;
+  height: 78px;
+  padding: 15px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #dedede;
+  margin-bottom: -1px;
+}
+.feed-item:hover{
+  background-color: #f8f8f8;
+}
+.feed-item-left-layout{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  text-align: center;
+}
+.feed-item-right-layout{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+}
+.feed-item-picture{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45px;
+  border-radius: 50px;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+}
+.feed-item-picture:hover{
+  filter: brightness(1.2);
+}
+.feed-item-source-twitter{
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  background-image: url('http://t3.gstatic.com/images?q=tbn:ANd9GcRYYutAN68CrU9g4BmPLDwWgT2Q1zha9RNKbpvOVXPXEO61ZyzXoh_KlB4');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50px;
+}
+.feed-item-blue-dot{
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #03a0f6;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.feed-item-short-name{
+  color: grey;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.feed-item-full-name{
+  font-size: 1.1em;
+}
+.feed-item-title{
+  width: 100%;
+  font-size: 0.95em;
+  color: #4b4b4b;
+  height: 3em;
+  line-height: 1.5em;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.feed-item-date{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: blue;
+  font-size: 0.9em;
+}
+
+/* TOOLS */
+.ellipsis{
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  word-wrap: break-word;
+}
