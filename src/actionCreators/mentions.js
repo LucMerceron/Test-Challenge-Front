@@ -19,7 +19,7 @@ export function getMentionsByAccount(accountId, alertId) {
     Api
       .getWithAccess(AppConstants.API_ADDRESS + '/accounts/' + accountId + '/alerts/' + alertId + '/mentions')
       .then(function (res) {
-        dispatch(getMentionsSuccess(res.mentions))
+        dispatch(getMentionsSuccess(res.body.mentions))
       })
       .catch(function (err) {
         dispatch(getMentionsFailed(err))
