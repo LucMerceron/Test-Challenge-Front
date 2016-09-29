@@ -1,6 +1,7 @@
 import React from 'react'
 
 const highlightMentionFromText = (text, mention) => {
+  // Here I should sanitize my string agains't XSS attack
   const re = new RegExp(mention, 'gi')
 
   return text.replace(re, '<mark>$&</mark>')
